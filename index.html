@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Resume Builder Form By  AS</h1>
+
+        <!-- Form for Inputting Resume Data -->
+        <form id="resume-form">
+            <section id="personal-info-form">
+                <h2>Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="profile-pic-input" class="profile-pic-label">Profile Picture:</label>
+                <div id="profile-pic-dropzone" class="dropzone">
+                    <p>Drag & Drop Image Here</p>
+                    <input type="file" id="profile-pic-input" name="profile-pic" accept="image/*">
+                </div>
+            </section>
+
+            <section id="education-form">
+                <h2>Education</h2>
+                <textarea id="education" name="education" rows="4" placeholder="Enter your education details here" required></textarea>
+            </section>
+
+            <section id="skills-form">
+                <h2>Skills</h2>
+                <textarea id="skills" name="skills" rows="4" placeholder="Enter your skills here" required></textarea>
+            </section>
+
+            <section id="experience-form">
+                <h2>Work Experience</h2>
+                <textarea id="work-experience" name="work-experience" rows="4" placeholder="Enter your work experience here" required></textarea>
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+<h1>YOUR RESUME OUTPUT</h1>
+        <!-- Resume Output -->
+        <div id="resume-output" class="hidden">
+            <h1 id="resume-name"></h1>
+            <p id="resume-email"></p>
+            <p id="resume-phone"></p>
+            <img id="resume-profile-pic" src="" alt="Profile Picture" class="profile-pic">
+
+            <h2>Education</h2>
+            <p id="resume-education"></p>
+
+            <h2>Skills</h2>
+            <p id="resume-skills"></p>
+
+            <h2>Work Experience</h2>
+            <p id="resume-work-experience"></p>
+        </div>
+    </div>
+
+    <script src="scripts.ts"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Existing CSS */
+
+.dropzone {
+    border: 2px dashed #b1b1b1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropzone p {
+    margin: 0;
+    color: #000000;
+}
+
+#profile-pic-input {
+    display: uploaded picture;
+}
+
+.profile-pic-label {
+    display: show uploaded picture;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: block;
+    margin: 110px;
+    object-fit: cover;
+}
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 18p8x;
+    padding: 0;
+    background-color: #9ce8ff; /* Default background color */
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #a8a8a8; /* Default container background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropzone styles */
+.dropzone {
+    border: 2px dashed #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropzone p {
+    margin: 0;
+    color: #007BFF;
+}
+
+.profile-pic-label {
+    display: picture;
+    margin-top: 100px;
+    border: 200px;
+    cursor: pointer;
+}
+
